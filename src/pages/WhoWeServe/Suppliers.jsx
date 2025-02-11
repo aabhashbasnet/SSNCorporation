@@ -8,7 +8,7 @@ const Suppliers = () => {
     <div className="supplier-section">
       <section className="hero">
         <div className="hero-content">
-          <h1>AI-Driven Solutions for Suppliers</h1>
+          <h1>AI-Driven Solutions for Supplierss</h1>
           <p>
             Maximize efficiency and accuracy in material sourcing with our AI-powered tools.
             Reduce procurement costs and boost your operations' productivity.
