@@ -87,9 +87,9 @@ const SubContractors = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="cta-final">
+      <section className="subcontractors-cta-final">
         <h2>Ready to Get Started?</h2>
-        <div className="cta-buttons">
+        <div className="subcontractors-cta-buttons">
           <button className="cta-demo">Request a Demo</button>
           <button className="cta-free">Get Started</button>
         </div>

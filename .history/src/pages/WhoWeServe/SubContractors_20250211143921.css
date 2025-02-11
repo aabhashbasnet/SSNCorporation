@@ -1,5 +1,5 @@
-/* General Contractor Section Styles */
-.general-contractor {
+/* Subcontractors Section Styles */
+.subcontractors {
     font-family: 'Roboto', sans-serif;
     color: #333;
     margin: 0;
@@ -8,7 +8,7 @@
   }
   
   /* Hero Section */
-  .general-contractor .hero {
+  .subcontractors .hero {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: #fff;
     padding: 100px 20px;
@@ -16,27 +16,27 @@
     border-bottom: 5px solid #f8f9fa;
   }
   
-  .general-contractor .hero .hero-content h1 {
+  .subcontractors .hero .hero-content h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.2;
   }
   
-  .general-contractor .hero .hero-content p {
+  .subcontractors .hero .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     opacity: 0.8;
   }
   
-  .general-contractor .hero .hero-buttons {
+  .subcontractors .hero .hero-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
   
-  .general-contractor .hero .cta-demo,
-  .general-contractor .hero .cta-experience {
+  .subcontractors .hero .cta-demo,
+  .subcontractors .hero .cta-experience {
     background-color: #ff7e5f;
     color: white;
     border: none;
@@ -49,27 +49,27 @@
     border: 2px solid transparent;
   }
   
-  .general-contractor .hero .cta-demo:hover,
-  .general-contractor .hero .cta-experience:hover {
+  .subcontractors .hero .cta-demo:hover,
+  .subcontractors .hero .cta-experience:hover {
     background-color: #feb47b;
     border: 2px solid #ff7e5f;
   }
   
   /* Challenges Section */
-  .general-contractor .challenges {
+  .subcontractors .features {
     background-color: #f1f1f1;
     padding: 60px 20px;
     text-align: center;
   }
   
-  .general-contractor .challenges h2 {
+  .subcontractors .features h2 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 30px;
   }
   
-  .general-contractor .challenges p {
+  .subcontractors .features p {
     font-size: 1.15rem;
     color: #555;
     max-width: 800px;
@@ -77,28 +77,28 @@
   }
   
   /* Process Section */
-  .general-contractor .process {
+  .subcontractors .services {
     padding: 80px 20px;
     background-color: #fff;
     text-align: center;
     border-top: 5px solid #f8f9fa;
   }
   
-  .general-contractor .process h2 {
+  .subcontractors .services h2 {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 40px;
     font-weight: 600;
   }
   
-  .general-contractor .process .steps {
+  .subcontractors .services .steps {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 40px;
     justify-items: center;
   }
   
-  .general-contractor .process .step {
+  .subcontractors .services .step {
     background-color: #f8f9fa;
     padding: 40px;
     border-radius: 10px;
@@ -107,50 +107,50 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .general-contractor .process .step:hover {
+  .subcontractors .services .step:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
   
-  .general-contractor .process .step-number {
+  .subcontractors .process .step-number {
     font-size: 2.5rem;
     font-weight: bold;
     color: #ff7e5f;
     margin-bottom: 20px;
   }
   
-  .general-contractor .process .step h3 {
+  .subcontractors .process .step h3 {
     font-size: 1.4rem;
     color: #333;
     margin-bottom: 15px;
   }
   
-  .general-contractor .process .step p {
+  .subcontractors .process .step p {
     font-size: 1.1rem;
     color: #555;
   }
   
   /* Benefits Section */
-  .general-contractor .benefits {
+  .subcontractors .benefits {
     padding: 80px 20px;
     background-color: #f1f1f1;
     text-align: center;
   }
   
-  .general-contractor .benefits h2 {
+  .subcontractors .benefits h2 {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 40px;
     font-weight: 600;
   }
   
-  .general-contractor .benefits .benefit-container {
+  .subcontractors .benefits .benefit-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
   }
   
-  .general-contractor .benefits .benefit {
+  .subcontractors .benefits .benefit {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -159,24 +159,24 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .general-contractor .benefits .benefit:hover {
+  .subcontractors .benefits .benefit:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
   
-  .general-contractor .benefits .benefit h3 {
+  .subcontractors .benefits .benefit h3 {
     font-size: 1.6rem;
     color: #007bff;
     margin-bottom: 20px;
   }
   
-  .general-contractor .benefits .benefit p {
+  .subcontractors .benefits .benefit p {
     font-size: 1.1rem;
     color: #555;
     margin-bottom: 20px;
   }
   
-  .general-contractor .benefits .cta-demo {
+  .subcontractors .benefits .cta-demo {
     background-color: #ff7e5f;
     color: white;
     padding: 15px 35px;
@@ -187,33 +187,33 @@
     transition: all 0.3s ease;
   }
   
-  .general-contractor .benefits .cta-demo:hover {
+  .subcontractors .benefits .cta-demo:hover {
     background-color: #feb47b;
     border: 2px solid #ff7e5f;
   }
   
   /* Testimonials Section */
-  .general-contractor .testimonials {
+  .subcontractors .testimonials {
     padding: 80px 20px;
     background-color: #fff;
     text-align: center;
   }
   
-  .general-contractor .testimonials h2 {
+  .subcontractors .testimonials h2 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 40px;
   }
   
-  .general-contractor .testimonials .testimonial-container {
+  .subcontractors .testimonials .testimonial-container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
   }
   
-  .general-contractor .testimonials .testimonial {
+  .subcontractors .testimonials .testimonial {
     background-color: #f8f9fa;
     padding: 30px;
     border-radius: 10px;
@@ -223,16 +223,16 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .general-contractor .testimonials .testimonial:hover {
+  .subcontractors .testimonials .testimonial:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
   
-  .general-contractor .testimonials .testimonial-image-container {
+  .subcontractors .testimonials .testimonial-image-container {
     margin-bottom: 20px;
   }
   
-  .general-contractor .testimonials .testimonial-image {
+  .subcontractors .testimonials .testimonial-image {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -240,26 +240,26 @@
     margin-bottom: 20px;
   }
   
-  .general-contractor .testimonials p {
+  .subcontractors .testimonials p {
     font-size: 1.1rem;
     color: #333;
     margin-bottom: 15px;
   }
   
-  .general-contractor .testimonials span {
+  .subcontractors .testimonials span {
     font-size: 1.1rem;
     color: #007bff;
   }
   
   /* Categories Section */
-  .general-contractor .categories {
+  .subcontractors .categories {
     padding: 60px 20px;
     background-color: #f1f1f1;
     text-align: center;
     border-top: 5px solid #f8f9fa;
   }
   
-  .general-contractor .categories h2 {
+  .subcontractors .categories h2 {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 40px;
@@ -268,7 +268,7 @@
     letter-spacing: 1px;
   }
   
-  .general-contractor .categories ul {
+  .subcontractors .categories ul {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -277,7 +277,7 @@
     gap: 30px;
   }
   
-  .general-contractor .categories ul li {
+  .subcontractors .categories ul li {
     font-size: 1.3rem;
     color: #333;
     background-color: #fff;
@@ -287,47 +287,47 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .general-contractor .categories ul li:hover {
+  .subcontractors .categories ul li:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     background-color: #ff7e5f;
     color: white;
   }
   
-  .general-contractor .categories ul li:nth-child(even) {
+  .subcontractors .categories ul li:nth-child(even) {
     background-color: #e9ecef;
   }
   
-  .general-contractor .categories ul li:nth-child(odd) {
+  .subcontractors .categories ul li:nth-child(odd) {
     background-color: #fff;
   }
   
-  .general-contractor .categories ul li:hover {
+  .subcontractors .categories ul li:hover {
     background-color: #feb47b;
   }
   
   /* Final CTA Section */
-  .general-contractor .cta-final {
+  .subcontractors .cta-final {
     padding: 80px 20px;
     text-align: center;
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: white;
   }
   
-  .general-contractor .cta-final h2 {
+  .subcontractors .cta-final h2 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 30px;
   }
   
-  .general-contractor .cta-final .cta-buttons {
+  .subcontractors .cta-final .cta-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
   
-  .general-contractor .cta-final .cta-demo,
-  .general-contractor .cta-final .cta-free {
+  .subcontractors .cta-final .cta-demo,
+  .subcontractors .cta-final .cta-free {
     background-color: #007bff;
     color: white;
     border: none;
@@ -338,8 +338,8 @@
     transition: all 0.3s ease;
   }
   
-  .general-contractor .cta-final .cta-demo:hover,
-  .general-contractor .cta-final .cta-free:hover {
+  .subcontractors .cta-final .cta-demo:hover,
+  .subcontractors .cta-final .cta-free:hover {
     background-color: #0056b3;
   }
   

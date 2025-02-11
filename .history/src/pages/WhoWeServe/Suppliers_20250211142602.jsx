@@ -1,17 +1,17 @@
 import React from "react";
-import "./Contractors.css";
+import "./Suppliers.css";
 import img1 from "../../assets/image1.jpg";
 import img2 from "../../assets/image2.jpg";
 
-const Contractors = () => {
+const Suppliers = () => {
   return (
-    <div className="general-contractor">
+    <div className="supplier-section">
       <section className="hero">
         <div className="hero-content">
-          <h1>AI-Powered Takeoff Software for General Contractors</h1>
+          <h1>AI-Driven Solutions for Supplierss</h1>
           <p>
-            Streamline your takeoffs with our smart solution that cuts your work
-            time by 90% and helps you secure 30% more bids.
+            Maximize efficiency and accuracy in material sourcing with our AI-powered tools.
+            Reduce procurement costs and boost your operations' productivity.
           </p>
           <div className="hero-buttons">
             <button className="cta-demo">Book a Demo</button>
@@ -21,61 +21,55 @@ const Contractors = () => {
       </section>
 
       <section className="challenges">
-        <h2>Competing in a Fast-Paced Market</h2>
+        <h2>Facing Supply Chain Challenges</h2>
         <p>
-          Manual takeoffs slow you down—wasting up to half of your bid cycle. With
-          limited time to coordinate, refine estimates, or seize new
-          opportunities, staying competitive becomes a challenge.
+          Manual sourcing and inventory tracking can cause delays, miscalculations, and unnecessary costs. 
+          Time-consuming processes can hurt your bottom line and delay your operations.
         </p>
       </section>
 
       <section className="process">
-        <h2>Get Set Up in Just Three Simple Steps</h2>
+        <h2>Streamline Your Procurement in 3 Easy Steps</h2>
         <div className="steps">
           <div className="step">
             <div className="step-number">1</div>
-            <h3>Upload Your Plans</h3>
-            <p>Quickly upload your blueprint and project documents.</p>
+            <h3>Upload Your Inventory</h3>
+            <p>Seamlessly upload your stock data and product catalog.</p>
           </div>
           <div className="step">
             <div className="step-number">2</div>
-            <h3>Define Your Scope</h3>
-            <p>Enter project details and scope for tailored takeoffs.</p>
+            <h3>Define Your Needs</h3>
+            <p>Set your procurement criteria and target supplies.</p>
           </div>
           <div className="step">
             <div className="step-number">3</div>
-            <h3>Proceed & Automate</h3>
-            <p>
-              Let our AI handle the heavy lifting and generate precise takeoffs.
-            </p>
+            <h3>Let AI Optimize</h3>
+            <p>Our AI will handle the sourcing, find best deals, and track inventory for you.</p>
           </div>
         </div>
       </section>
 
       <section className="benefits">
-        <h2>Revolutionize Your Bidding Strategy</h2>
+        <h2>Enhance Your Procurement Strategy</h2>
         <div className="benefit-container">
           <div className="benefit">
-            <h3>Save Valuable Time</h3>
+            <h3>Reduce Procurement Time</h3>
             <p>
-              Automate your takeoffs end to end, freeing up hours for strategic
-              planning and vendor coordination.
+              Automate sourcing and minimize manual tasks, allowing your team to focus on more strategic activities.
             </p>
             <button className="cta-demo">Get a Demo</button>
           </div>
           <div className="benefit">
-            <h3>Accurate, Trade-Specific Details</h3>
+            <h3>Data-Driven Decisions</h3>
             <p>
-              Obtain precise quantities broken down by trade—whether it’s
-              concrete, electrical, HVAC, or more.
+              Make smarter purchasing decisions using AI-backed insights and real-time data
             </p>
             <button className="cta-demo">Try It Out</button>
           </div>
           <div className="benefit">
-            <h3>Win More Projects</h3>
+            <h3>Save on Costs</h3>
             <p>
-              Deliver faster, more competitive bids with improved accuracy and a
-              streamlined workflow.
+              Leverage AI to identify the best prices, ensuring cost-effective procurement.
             </p>
             <button className="cta-demo">Learn More</button>
           </div>
@@ -83,55 +77,53 @@ const Contractors = () => {
       </section>
 
       {/* Testimonials Section */}
-      {/* Testimonials Section */}
       <section className="testimonials">
-        <h2>Our Clients Speak</h2>
+        <h2>What Our Clients Say</h2>
         <div className="testimonial-container">
           <div className="testimonial">
             <div className="testimonial-image-container">
               <img
                 src={img1}
-                alt="Alex Johnson, Construction Consultant"
+                alt="John Smith, Procurement Specialist"
                 className="testimonial-image"
               />
             </div>
             <p>
-              "This software slashed our takeoff time dramatically and helped us secure a multi-million dollar project!"
+              "The AI tool revolutionized our procurement process, saving us hours every week!"
             </p>
-            <span>- Alex Johnson, Construction Consultant</span>
+            <span>- John Smith, Procurement Specialist</span>
           </div>
           <div className="testimonial">
             <div className="testimonial-image-container">
               <img
                 src={img2}
-                alt="Samantha Brown, Operations Manager"
+                alt="Rachel Lee, Supply Chain Manager"
                 className="testimonial-image"
               />
             </div>
             <p>
-              "A true game-changer! The accuracy and speed of the tool have completely transformed our bidding process."
+              "We saw a significant reduction in operational costs and time spent on sourcing thanks to this tool."
             </p>
-            <span>- Samantha Brown, Operations Manager</span>
+            <span>- Rachel Lee, Supply Chain Manager</span>
           </div>
         </div>
       </section>
 
-
-      <section className="categories">
-        <h2>Built for Every Trade</h2>
+      <section className="trades">
+        <h2>Tailored for Every Industry</h2>
         <ul>
-          <li>Concrete & Rebar</li>
-          <li>HVAC & Mechanical</li>
-          <li>Electrical & Plumbing</li>
-          <li>Drywall & Framing</li>
-          <li>Masonry & Flooring</li>
-          <li>Paving & Roofing</li>
+          <li>Construction Materials</li>
+          <li>Electrical Components</li>
+          <li>Plumbing & HVAC Supplies</li>
+          <li>Raw Materials</li>
+          <li>Building Equipment</li>
+          <li>Packaging Materials</li>
           <li>And More...</li>
         </ul>
       </section>
 
       <section className="cta-final">
-        <h2>Ready to Transform Your Takeoffs?</h2>
+        <h2>Ready to Streamline Your Procurement?</h2>
         <div className="cta-buttons">
           <button className="cta-demo">Book a Demo</button>
           <button className="cta-free">Try It Free</button>
@@ -141,4 +133,4 @@ const Contractors = () => {
   );
 };
 
-export default Contractors;
+export default Suppliers;

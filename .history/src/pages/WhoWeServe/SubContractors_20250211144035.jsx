@@ -47,18 +47,18 @@ const SubContractors = () => {
       </section>
 
       {/* SubContractors Benefits Section */}
-      <section className="benefits">
+      <section className="subcontractors-benefits">
         <h2>Key Benefits of Working With Us</h2>
-        <div className="benefit-container">
-          <div className="benefit">
+        <div className="subcontractor-benefit-container">
+          <div className="subcontractor-benefit">
             <h3>Skilled Workforce</h3>
             <p>Access to highly skilled workers in all construction domains.</p>
           </div>
-          <div className="benefit">
+          <div className="subcontractor-benefit">
             <h3>Reliable Service</h3>
             <p>Our subcontractors are reliable and maintain the highest level of integrity.</p>
           </div>
-          <div className="benefit">
+          <div className="subcontractor-benefit">
             <h3>Cost Efficiency</h3>
             <p>We help you manage costs effectively while ensuring top-quality results.</p>
           </div>
@@ -66,19 +66,19 @@ const SubContractors = () => {
       </section>
 
       {/* SubContractors Testimonials Section */}
-      <section className="testimonials">
+      <section className="subcontractors-testimonials">
         <h2>What Our Clients Say</h2>
-        <div className="testimonial-container">
-          <div className="testimonial">
-            <div className="testimonial-image-container">
-              <img src={img1} alt="Client" className="testimonial-image" />
+        <div className="subcontractor-testimonial-container">
+          <div className="subcontractor-testimonial">
+            <div className="subcontractor-testimonial-image-container">
+              <img src={img1} alt="Client" className="subcontractor-testimonial-image" />
             </div>
             <p>"The subcontractors were top-notch and helped us deliver the project on time and on budget!"</p>
             <span>- John Doe, CEO</span>
           </div>
-          <div className="testimonial">
-            <div className="testimonial-image-container">
-              <img src={img2} alt="Client" className="testimonial-image" />
+          <div className="subcontractor-testimonial">
+            <div className="subcontractor-testimonial-image-container">
+              <img src={img2} alt="Client" className="subcontractor-testimonial-image" />
             </div>
             <p>"Great experience working with these subcontractors. We could always rely on them for quality work."</p>
             <span>- Jane Smith, Project Manager</span>
@@ -87,9 +87,9 @@ const SubContractors = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="cta-final">
+      <section className="subcontractors-cta-final">
         <h2>Ready to Get Started?</h2>
-        <div className="cta-buttons">
+        <div className="subcontractors-cta-buttons">
           <button className="cta-demo">Request a Demo</button>
           <button className="cta-free">Get Started</button>
         </div>

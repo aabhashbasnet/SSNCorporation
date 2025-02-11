@@ -68,17 +68,17 @@ const SubContractors = () => {
       {/* SubContractors Testimonials Section */}
       <section className="testimonials">
         <h2>What Our Clients Say</h2>
-        <div className="testimonial-container">
-          <div className="testimonial">
-            <div className="testimonial-image-container">
-              <img src={img1} alt="Client" className="testimonial-image" />
+        <div className="subcontractor-testimonial-container">
+          <div className="subcontractor-testimonial">
+            <div className="subcontractor-testimonial-image-container">
+              <img src={img1} alt="Client" className="subcontractor-testimonial-image" />
             </div>
             <p>"The subcontractors were top-notch and helped us deliver the project on time and on budget!"</p>
             <span>- John Doe, CEO</span>
           </div>
-          <div className="testimonial">
-            <div className="testimonial-image-container">
-              <img src={img2} alt="Client" className="testimonial-image" />
+          <div className="subcontractor-testimonial">
+            <div className="subcontractor-testimonial-image-container">
+              <img src={img2} alt="Client" className="subcontractor-testimonial-image" />
             </div>
             <p>"Great experience working with these subcontractors. We could always rely on them for quality work."</p>
             <span>- Jane Smith, Project Manager</span>
@@ -87,9 +87,9 @@ const SubContractors = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="cta-final">
+      <section className="subcontractors-cta-final">
         <h2>Ready to Get Started?</h2>
-        <div className="cta-buttons">
+        <div className="subcontractors-cta-buttons">
           <button className="cta-demo">Request a Demo</button>
           <button className="cta-free">Get Started</button>
         </div>

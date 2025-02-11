@@ -78,7 +78,7 @@ const SubContractors = () => {
           </div>
           <div className="testimonial">
             <div className="testimonial-image-container">
-              <img src={img2} alt="Client" className="testimonial-image" />
+              <img src={img2} alt="Client" className="subcontractor-testimonial-image" />
             </div>
             <p>"Great experience working with these subcontractors. We could always rely on them for quality work."</p>
             <span>- Jane Smith, Project Manager</span>
@@ -87,9 +87,9 @@ const SubContractors = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="cta-final">
+      <section className="subcontractors-cta-final">
         <h2>Ready to Get Started?</h2>
-        <div className="cta-buttons">
+        <div className="subcontractors-cta-buttons">
           <button className="cta-demo">Request a Demo</button>
           <button className="cta-free">Get Started</button>
         </div>
