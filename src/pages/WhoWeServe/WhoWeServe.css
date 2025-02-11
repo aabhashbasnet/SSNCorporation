@@ -1,0 +1,99 @@
+.who-we-serve {
+    padding: 5rem 1rem;
+    
+  }
+  
+  .serve-container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .serve-title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-weight: 1000;
+  }
+  
+  .serve-subtitle {
+    text-align: center;
+    color: #4b5563;
+    font-size: 1.125rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+  }
+  
+  .serve-cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  
+  .serve-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .serve-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .serve-card h3 {
+    color: #1f2937;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
+  }
+  
+  .serve-card p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    color: #3b82f6;
+  }
+  
+  .card-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .card-link:hover {
+    color: #2563eb;
+  }
+  
+  @media (min-width: 768px) {
+    .serve-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .serve-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .serve-title {
+      font-size: 3rem;
+    }
+    
+    .serve-subtitle {
+      font-size: 1.25rem;
+    }
+  }

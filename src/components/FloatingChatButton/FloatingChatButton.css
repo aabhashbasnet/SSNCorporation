@@ -1,0 +1,285 @@
+/* CSS Variables for Easy Customization */
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --accent-gradient: linear-gradient(135deg, #007bff, #00c6ff);
+  --header-gradient: linear-gradient(135deg, #0056b3, #007bff);
+  --box-bg: linear-gradient(135deg, #ffffff, #f7f7f7);
+  --text-color: #333;
+  --shadow-light: rgba(0, 0, 0, 0.15);
+  --shadow-heavy: rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Chat Button */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background: var(--accent-gradient);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 12px var(--shadow-heavy);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  animation: float 3s ease-in-out infinite;
+}
+
+.chat-button:hover {
+  background: var(--primary-hover);
+  transform: scale(1.1);
+}
+
+/* Floating Chat Button Float Animation */
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Chat Box - Bigger and Stylish */
+.chat-box {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 500px;
+  max-width: 90%;
+  height: 600px;
+  background: var(--box-bg);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px var(--shadow-heavy);
+  display: flex;
+  flex-direction: column;
+  animation: popIn 0.5s ease-out;
+  z-index: 1001;
+  overflow: hidden;
+}
+
+/* Pop In Animation for Chat Box */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+  }
+  80% {
+    opacity: 0.8;
+    transform: translateY(-10px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Greeting Message */
+.greeting {
+  background-color: rgba(225, 225, 225, 0.9);
+  padding: 12px 15px;
+  margin: 10px 15px;
+  border-radius: 10px;
+  animation: fadeInMessage 0.6s ease-in-out;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Fade In Message Animation */
+@keyframes fadeInMessage {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Chat Header */
+.chat-header {
+  background: var(--header-gradient);
+  color: #fff;
+  padding: 20px;
+  font-size: 1.25em;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Updated Close Button Styling */
+.close-btn {
+  background: #ff4d4d; /* Red background */
+  border: none;
+  color: #fff;       /* White "X" */
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #ff1a1a; /* Brighter red on hover */
+  transform: scale(1.1) rotate(10deg);
+}
+
+/* Chat Body */
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background: #fafafa;
+}
+
+/* Chat Message */
+.message {
+  background-color: #f1f1f1;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+  font-size: 1em;
+  box-shadow: 0 2px 5px var(--shadow-light);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Contact Details */
+.contact-details input {
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-details input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.contact-details button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: var(--accent-gradient);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1em;
+}
+
+.contact-details button:hover {
+  background: var(--primary-hover);
+}
+
+/* FAQ Section */
+.faq-section p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.faq-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-section li {
+  background-color: #f1f1f1;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 1em;
+}
+
+.faq-section li:hover {
+  background: #e1e1e1;
+  transform: translateX(5px);
+}
+
+/* Chat Footer */
+.chat-footer {
+  display: flex;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 12px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-footer input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.chat-footer button {
+  padding: 12px 20px;
+  background: var(--accent-gradient);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1em;
+}
+
+.chat-footer button:hover {
+  background: var(--primary-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .chat-box {
+    width: 90%;
+    height: 500px;
+    bottom: 80px;
+    right: 5%;
+  }
+
+  .chat-header {
+    font-size: 1.1em;
+    padding: 15px;
+  }
+
+  .chat-body {
+    padding: 15px;
+    font-size: 0.9em;
+  }
+
+  .chat-footer input,
+  .chat-footer button {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}

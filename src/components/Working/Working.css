@@ -1,0 +1,160 @@
+/* Working.css */
+
+/* Container for the whole section */
+.how-it-works-container {
+    padding: 60px 20px;
+    /* background-color: #f1f4f9; */
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 40px;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Flexbox container for the cards */
+  .steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Individual step cards */
+  .step-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 260px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .step-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #ff6f61, #f79c42, #6c5ce7);
+    z-index: -1;
+    animation: expand 3s ease-out infinite;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Step icon circle */
+  .step-icon {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6c5ce7;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .step-card:hover .step-icon {
+    transform: scale(1.1);
+  }
+  
+  /* Title style for each step */
+  .step-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+  
+  .step-card:hover .step-title {
+    color: #6c5ce7;
+  }
+  
+  /* Description under each title */
+  .step-description {
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #6c757d;
+    line-height: 1.6;
+    padding-bottom: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .step-card:hover .step-description {
+    opacity: 1;
+    color: #2f353b;
+  }
+  
+  /* Hover animations for smooth effects */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step-card {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  }
+  
