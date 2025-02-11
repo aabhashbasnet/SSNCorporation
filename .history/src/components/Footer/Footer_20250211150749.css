@@ -39,7 +39,7 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.5);
+  
   color: #ff6347; /* Change hover color to match the button theme */
 }
 
@@ -74,7 +74,6 @@
 
 .footer-nav a:hover {
   color: #0e76a8;
-  transform: translate(5px);
 }
 
 .footer-nav a:focus {

@@ -39,7 +39,7 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   color: #ff6347; /* Change hover color to match the button theme */
 }
 
