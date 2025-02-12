@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SSNCorporation/static/css/main.6fd1f05e.css",
+    "main.js": "/SSNCorporation/static/js/main.01ea287e.js",
+    "static/js/488.f64dbb2b.chunk.js": "/SSNCorporation/static/js/488.f64dbb2b.chunk.js",
+    "static/media/fa-solid-900.ttf": "/SSNCorporation/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/SSNCorporation/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/SSNCorporation/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/SSNCorporation/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/SSNCorporation/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/fa-regular-400.woff2": "/SSNCorporation/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/logo.png": "/SSNCorporation/static/media/logo.90ad557f535b9b2ec571.png",
+    "static/media/construction.jpg": "/SSNCorporation/static/media/construction.c362d40fa38bf83bc8f3.jpg",
+    "static/media/fa-v4compatibility.ttf": "/SSNCorporation/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/paving.jpg": "/SSNCorporation/static/media/paving.aaae9fa5e85aa481ade5.jpg",
+    "static/media/fa-v4compatibility.woff2": "/SSNCorporation/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/SSNCorporation/index.html",
+    "main.6fd1f05e.css.map": "/SSNCorporation/static/css/main.6fd1f05e.css.map",
+    "main.01ea287e.js.map": "/SSNCorporation/static/js/main.01ea287e.js.map",
+    "488.f64dbb2b.chunk.js.map": "/SSNCorporation/static/js/488.f64dbb2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fd1f05e.css",
+    "static/js/main.01ea287e.js"
+  ]
+}
