@@ -19,6 +19,9 @@ import Contractors from "./pages/WhoWeServe/Contractors";
 import Suppliers from "./pages/WhoWeServe/Suppliers";
 import SubContractors from "./pages/WhoWeServe/SubContractors";
 // import GetStarted from "./pages/GetStarted/GetStarted";
+import Services from "./pages/Navigation/Services/Services";
+import Products from "./pages/Navigation/Products/Products";
+import Portfolio from "./pages/Navigation/Portfolio/Portfolio";
 function App() {
   return (
     <BrowserRouter>
@@ -54,6 +57,9 @@ function App() {
           <Route path="/who-we-serve/suppliers" element={<Suppliers />} />
           <Route path="/who-we-serve/sub-contractors" element={<SubContractors />} />
           {/* <Route path="/get-started" element={<GetStarted />} /> */}
+          <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
     </BrowserRouter>
