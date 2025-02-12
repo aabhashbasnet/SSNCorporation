@@ -10,7 +10,7 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
     position: sticky;
     top: 0;
-    z-index: 10000;
+    z-index: 1000;
     background: rgba(10, 25, 47, 0.5); /* Dark transparent */
     backdrop-filter: blur(10px); /* Glass effect */
 }
