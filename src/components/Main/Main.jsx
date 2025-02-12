@@ -1,15 +1,9 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./Main.css";
 
 const Main = () => {
-  const navigate = useNavigate();
-
-  const handleGetStartedClick = () => {
-    // Open the GetStarted component in a new tab
-    const newTab = window.open("", "_blank");
-    newTab.location.href = "/get-started";
-  };
+  // const navigate = useNavigate();
 
   useEffect(() => {
     // Adding animation to fade in the content
@@ -30,7 +24,7 @@ const Main = () => {
           </p>
 
           <div className="button-container">
-            <button className="button primary" onClick={handleGetStartedClick}>
+            <button className="button primary" >
               Get Started
             </button>
             <button className="button connect">Connect with Us</button>
