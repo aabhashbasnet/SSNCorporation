@@ -262,13 +262,15 @@
 @media (max-width: 600px) {
   .chat-box {
     width: 90%;
-    height: 500px;
-    bottom: 80px;
+    height: 60vh;
+    bottom: 10px;
     right: 5%;
+    border-radius: 10px;
+
   }
 
   .chat-header {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     padding: 15px;
   }
 
