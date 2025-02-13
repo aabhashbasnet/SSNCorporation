@@ -14,24 +14,26 @@ const industriesData = [
 const Industries = () => {
   return (
     <div className="industries-container">
-      <h2 className="industries-title">Industries We Serve</h2>
-      <p className="industries-subtitle">
-        Discover our expertise across various industries to help you build, maintain, and innovate.
-      </p>
-      
-      <div className="industries-grid">
-        {industriesData.map((industry, index) => (
-          <div key={index} className="industry-card">
-            <div className="icon-container" style={{ backgroundColor: industry.color }}>
-              <FontAwesomeIcon icon={industry.icon} className="industry-icon" />
-            </div>
-            <h3 className="industry-title">{industry.title}</h3>
-            <p className="industry-description">{industry.description}</p>
-            <Link to={industry.link} className="learn-more-btn">Learn More</Link>
-          </div>
-        ))}
+  <h2 className="industries-title">Industries We Serve</h2>
+  <p className="industries-subtitle">
+    Discover our expertise across various industries to help you build, maintain, and innovate.
+  </p>
+  
+  <div className="industries-grid">
+    {industriesData.map((industry, index) => (
+      <div key={index} className="industry-card">
+        <div className="industry-card__icon-container" style={{ backgroundColor: industry.color }}>
+          <FontAwesomeIcon icon={industry.icon} className="industry-card__icon" />
+        </div>
+        <h3 className="industry-card__title">{industry.title}</h3>
+        <p className="industry-card__description">{industry.description}</p>
+        <Link to={industry.link} className="industry-card__learn-more-btn">Learn More →</Link>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
+
   );
 };
 

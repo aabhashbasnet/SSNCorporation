@@ -34,6 +34,7 @@ const WhoWeServe = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };

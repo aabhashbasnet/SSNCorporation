@@ -1,6 +1,4 @@
-/* Import Poppins font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
+/* General Container Styling */
 .industries-container {
   padding: 5rem 1rem;
 }
@@ -23,65 +21,11 @@
   line-height: 1.6;
 }
 
+/* Grid Styling */
 .industries-grid {
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr;
-}
-
-.industry-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.industry-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.icon-container {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-.industry-icon {
-  font-size: 2.5rem;
-  color: white;
-}
-
-.industry-title {
-  color: #1f2937;
-  font-size: 1.5rem;
-  margin: 1.5rem 0 1rem;
-  font-weight: 600;
-}
-
-.industry-description {
-  color: #4b5563;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.learn-more-btn {
-  color: #3b82f6;
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.learn-more-btn:hover {
-  color: #2563eb;
 }
 
 @media (min-width: 768px) {
@@ -94,12 +38,72 @@
   .industries-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  
-  .industries-title {
-    font-size: 3rem;
-  }
-  
-  .industries-subtitle {
-    font-size: 1.25rem;
-  }
+}
+
+/* Individual Industry Card */
+.industry-card {
+  position: relative;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: visible;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Container */
+.industry-card__icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.industry-card__icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Title & Description Styling */
+.industry-card__title {
+  color: #1f2937;
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
+  font-weight: 600;
+}
+
+.industry-card__description {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Learn More Button */
+.industry-card__learn-more-btn {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  position: absolute;
+  bottom: 20px;
+ 
+  left: 15%;
+  transform: translateX(-50%);
+}
+
+.industry-card__learn-more-btn:hover {
+  color: #2563eb;
+  transform: scale(1.05);
 }
