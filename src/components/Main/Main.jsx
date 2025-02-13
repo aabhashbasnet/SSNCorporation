@@ -2,6 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./Main.css";
 
+const backgrounds = [
+  "radial-gradient(circle, #34d399, #7c3aed)", // Slide 1 background
+  "radial-gradient(circle, #1e3a8a, #9333ea)", // Slide 2 background
+  "radial-gradient(circle, #10b981, #2563eb)", // Slide 3 background
+];
+
 const slides = [
   {
     headline: "Automate Drawing Analysis",
@@ -28,7 +34,11 @@ const slides = [
 
 const Main = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [tooltip, setTooltip] = useState(null); // Moved here
   const intervalRef = useRef(null);
+
+  const handleMouseEnter = (index) => setTooltip(index);
+  const handleMouseLeave = () => setTooltip(null);
 
   const startAutoSlide = () => {
     clearInterval(intervalRef.current);
@@ -67,6 +77,7 @@ const Main = () => {
   return (
     <div
       className="carousel-container"
+      style={{ background: backgrounds[currentSlide] }}
       onMouseEnter={pauseAutoSlide}
       onMouseLeave={startAutoSlide}
       {...handlers} // Attach swipeable handlers
@@ -81,12 +92,26 @@ const Main = () => {
               <h1 className="headline">{slide.headline}</h1>
               <p className="description">{slide.description}</p>
               <div className="button-container">
-                <button className="button primary">
-                  {slide.primaryButton}
-                </button>
-                <button className="button secondary">
-                  {slide.secondaryButton}
-                </button>
+                <div
+                  className="tooltip-wrapper"
+                  onMouseEnter={() => handleMouseEnter("primary")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button className="button primary">{slide.primaryButton}</button>
+                  {tooltip === "primary" && (
+                    <div className="tooltip">Start exploring our features!</div>
+                  )}
+                </div>
+                <div
+                  className="tooltip-wrapper"
+                  onMouseEnter={() => handleMouseEnter("secondary")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button className="button secondary">{slide.secondaryButton}</button>
+                  {tooltip === "secondary" && (
+                    <div className="tooltip">Contact us for more information!</div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -112,7 +137,7 @@ const Main = () => {
           ></span>
         ))}
       </div>
-      {/* Progress bar (key changes on slide change to reset animation) */}
+      {/* Progress bar */}
       <div className="progress-container" key={currentSlide}>
         <div className="progress-bar"></div>
       </div>
