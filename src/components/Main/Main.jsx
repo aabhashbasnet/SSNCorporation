@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useSwipeable } from "react-swipeable";
 import "./Main.css";
 
 const slides = [
@@ -55,11 +56,20 @@ const Main = () => {
     startAutoSlide();
   };
 
+  // Swipeable handlers for mobile swiping
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    preventScrollOnSwipe: true,
+    trackMouse: true, // Enables swiping with a mouse (for testing)
+  });
+
   return (
     <div
       className="carousel-container"
       onMouseEnter={pauseAutoSlide}
       onMouseLeave={startAutoSlide}
+      {...handlers} // Attach swipeable handlers
     >
       <div
         className="carousel-slider"
