@@ -1,145 +1,213 @@
-/* Main content styling */
-.main-content {
-  padding: 50px 20px;
-  text-align: center; 
-  min-height: calc(100vh - 80px); 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
+.carousel-container {
   position: relative;
-  z-index: 1;
-}
-
-/* Gradient overlay */
-.main-content:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark gradient for readability */
-  
-  z-index: -1;
-}
-
-/* Headline styling with animated underline */
-.headline {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 60px;
-  font-weight: bold;
-  color: #0f0f0f;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  display: inline-block;
-  position: relative;
-  max-width: 90%;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 99, 71, 0.5);
-  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4), -3px -3px 2px rgba(255, 99, 71, 0.4);
-
-
-}
-
-.headline .instant {
-  color: #ff6347; /* Tomato color */
-}
-
-/* Underline animation effect */
-.headline:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 3px;
-  background: #ff6347;
-  transition: width 0.3s ease;
-}
-
-.headline:hover:after {
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle, #34d399, #7c3aed);
 }
 
-/* Description styling */
-.description {
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
+.carousel-slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.slide-content {
   max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  text-align: center;
+  padding: 2rem;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
 }
 
-/* Button container styling */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .button-container {
   display: flex;
-  gap: 20px; 
+  gap: 1rem;
   justify-content: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  align-items: center; 
 }
 
-/* Button base styling */
 .button {
-  padding: 12px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  border: none;
+  font-weight: 500;
 }
 
-/* Default button styling */
-.button:hover {
-  transform: translateY(-5px);
-}
-
-/* "Get Started" button styling */
 .button.primary {
-  background-color: #007bff;
-  color: white;
+  background-color: white;
+  color: #2563eb;
 }
 
 .button.primary:hover {
-  background-color: #0056b3;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
 }
 
-/* "Connect with Us" button styling */
-.button.connect {
-  background-color: #28a745;
+.button.secondary {
+  background-color: transparent;
+  border: 2px solid white;
   color: white;
 }
 
-.button.connect:hover {
-  background-color: #218838;
+.button.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
-/* Add some responsive styling */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-button.prev {
+  left: 20px;
+}
+
+.nav-button.next {
+  right: 20px;
+}
+
+.slide-indicators {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+.progress-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 20;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), #ffffff);
+  width: 0;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Added glow effect */
+  /* background-color: white; */
+  width: 0;
+  animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .headline {
-    font-size: 45px; /* Adjust the headline font size */
+    font-size: 2rem;
   }
 
   .description {
-    font-size: 16px;
-    padding: 0 20px;
+    font-size: 1rem;
   }
 
   .button-container {
-    flex-direction: column; /* Stack buttons on mobile */
+    flex-direction: column;
   }
 
-  .button {
-    width: 100%; 
-    max-width: 300px;
-    margin: 10px 0; 
+  .nav-button {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-slide {
+    padding: 1rem;
+  }
+
+  .headline {
+    font-size: 1.5rem;
+  }
+
+  .nav-button {
+    display: none;
   }
 }
