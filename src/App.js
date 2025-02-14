@@ -2,14 +2,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
 // Components
 import Header from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
 import FloatingChatButton from "./components/FloatingChatButton/FloatingChatButton";
 import Working from "./components/Working/Working";
 import Footer from "./components/Footer/Footer";
-
 // Pages
 import OurMission from "./pages/OurMission/OurMission";
 import LoginSignUp from "./pages/LoginSignUp/LoginSignUp";
