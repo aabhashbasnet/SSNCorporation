@@ -74,7 +74,7 @@ const Navbar = () => {
                 }
               }}
             >
-              Who We Serves
+              Who We Serve
             </Link>
             {whoWeServeOpen && (
               <ul className="dropdown-menu">
